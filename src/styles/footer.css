@@ -1,0 +1,20 @@
+.footer-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem 2rem 1.5rem 2rem;
+    text-align: center;
+    /* position: relative;
+    bottom: 0; */
+    background-color: var(--dark-blue);
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+.footer-logo img {
+    width: 8rem;
+    height: 4.2rem;
+}
+
+.footer-txt {
+    font-size: 1.3rem;
+}

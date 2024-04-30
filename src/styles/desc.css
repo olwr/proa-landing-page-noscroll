@@ -1,0 +1,16 @@
+.pg-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+    padding: 0 2rem;
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+}
+
+.pg-subtitle {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}

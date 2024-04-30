@@ -1,0 +1,49 @@
+@import url('/src/styles/banner.css');
+@import url('/src/styles/desc.css');
+@import url('/src/styles/arrow.css');
+@import url('/src/styles/pages.css');
+@import url('/src/styles/video.css');
+@import url('/src/styles/end.css');
+@import url('/src/styles/footer.css');
+
+:root {
+    box-sizing: border-box;
+    /* max-width: 100vh; */
+    --font-family: Helvetica, sans-serif;
+
+    /* Colors */
+    --dark-blue: #1C3380;
+    --light-blue: #00b8f2;
+    --white: #fff;
+    --black: #191919;
+    --second-white: #ddd;
+    --bg-color: #efefef;
+    --gray: #d9d9d9;
+    --yellow: #ffcc00;
+    --purple: #840099;
+    --pink: #ff0099;
+    --orange: #f06c00;
+    --green: #339933;
+    --light-green: #66cc33;
+}
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    /* 16px */
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+    background: var(--bg-color);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}

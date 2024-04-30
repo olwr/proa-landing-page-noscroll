@@ -1,0 +1,80 @@
+.pg-top {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.pg-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    padding: 0 0.5rem;
+    color: var(--dark-blue);
+}
+
+.banner-container {
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+.banner {
+    width: 100%;
+    height: 6.5rem;
+}
+
+.btn-ini-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.5rem;
+}
+
+.btn-ini {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-family);
+    border-radius: 1rem;
+    border: .1rem solid rgba(000, 000, 000, 0);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.btn-ini:disabled {
+    /* display: none; */
+    background-color: var(--gray);
+}
+
+@media screen and (width >= 700px) {
+    .pg-title {
+        font-size: 2.6rem;
+    }
+    
+    .banner {
+        height: 7rem;
+        width: 85%;
+    }
+
+    .btn-ini {
+        font-size: 2rem;
+        width: 65%;
+    }
+}
+
+@media screen and (width >= 1024px) {
+    .pg-title {
+        font-size: 2.8rem;
+    }
+    
+    .banner {
+        height: 8rem;
+        width: 50%;
+    }
+
+    .btn-ini {
+        width: 50%;
+        font-size: 2.2rem;
+    }
+}
