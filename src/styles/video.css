@@ -1,7 +1,7 @@
 .video-container {
-    margin: 1.5rem 1rem .5rem 1rem;
+    margin: 1.5rem 0 .5rem 0;
     padding: 2.5rem;
-    width: 90%;
+    width: 85%;
     /* display: flex; */
     text-align: center;
 }
