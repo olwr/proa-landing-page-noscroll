@@ -1,0 +1,36 @@
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: var(--second-blue);
+    color: var(--white);
+    gap: 1rem;
+}
+
+.header__logo {
+    width: 6.5rem;
+    height: 2.5rem;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (width <= 400px) {
+    .page-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (width >= 1024px) {
+    .header-container {
+        justify-content: center;
+        gap: 7rem;
+    }
+
+    .page-title {
+        font-size: 1.3rem;
+    }
+}

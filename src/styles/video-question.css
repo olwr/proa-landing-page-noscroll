@@ -1,0 +1,169 @@
+.video-question__page {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.video__tag,
+.question-container,
+.question__tag {
+    margin: .7rem 0;
+}
+
+.video__tag,
+.question__tag,
+.answer__tag,
+.feedback {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
+
+.question-container {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.iframe-container {
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--light-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.btn__answer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: .5rem;
+    align-items: center;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.85rem;
+    border: 3px solid var(--second-black);
+    border-radius: 25px;
+    background-color: transparent;
+    color: var(--black);
+    margin: .5rem 0;
+    padding: .7rem 1rem;
+    cursor: pointer;
+}
+
+.btn__answer img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn__answer:disabled {
+    color: var(--black);
+}
+
+.btn__answer.correct {
+    border-color: var(--light-green);
+}
+
+.btn__answer.incorrect {
+    border-color: var(--red);
+}
+
+.next-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.next-btn {
+    cursor: pointer;
+    width: 45%;
+    height: 4.5rem;
+    background: transparent url('/src/assets/CTA_SEGUIR.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-color: transparent;
+    border-radius: 50px;
+}
+
+.next-btn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (width >=768px) {
+
+    .video__tag,
+    .question__tag,
+    .answer__tag,
+    .feedback,
+    .btn__answer {
+        font-size: 1.3rem;
+    }
+
+    .next-btn {
+        width: 25%;
+    }
+
+    .iframe-container {
+        padding: 52% 0 0 0;
+    }
+
+}
+
+@media screen and (width >=1024px) {
+
+    .video__tag,
+    .question-container,
+    .question__tag {
+        margin: .9rem 0;
+    }
+
+    .video__tag,
+    .question__tag,
+    .answer__tag,
+    .feedback,
+    .btn__answer {
+        font-size: 1.5rem;
+    }
+
+    .question-container {
+        font-size: 2rem;
+    }
+
+    .iframe-container {
+        padding: 45% 0 0 0;
+    }
+
+    .answers-container {
+        margin: 3rem 15rem;
+    }
+
+    .next-btn-container {
+        margin: 2rem 0;
+    }
+
+    .next-btn {
+        width: 15%;
+        height: 5rem;
+    }
+}

@@ -1,0 +1,53 @@
+.final__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.final__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subscribe-btn-container {
+    width: 100%;
+}
+
+.subscribe-btn {
+    cursor: pointer;
+    width: 45%;
+    height: 4.5rem;
+    background: transparent url('/src/assets/CTA_INSCREVER.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-color: transparent;
+    border-radius: 50px;
+}
+
+.subscribe-btn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (width >= 768px) {
+    .subscribe-btn {
+        width: 25%;
+    }
+}
+
+@media screen and (width >= 1024px) {
+
+    .final__desc {
+        font-size: 1.7rem;
+    }
+
+    .subscribe-btn {
+        width: 15%;
+        height: 5rem;
+    }
+}

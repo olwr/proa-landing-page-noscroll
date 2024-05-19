@@ -1,30 +1,58 @@
-@import url('/src/styles/banner.css');
-@import url('/src/styles/desc.css');
-@import url('/src/styles/arrow.css');
+@import url('/src/styles/header.css');
+@import url('/src/styles/progress-bar.css');
+@import url('/src/styles/first-page.css');
 @import url('/src/styles/pages.css');
-@import url('/src/styles/video.css');
-@import url('/src/styles/end.css');
+@import url('/src/styles/video-question.css');
+@import url('/src/styles/final-page.css');
 @import url('/src/styles/footer.css');
 
-:root {
+@font-face {
+    font-family: 'neo_sans_stdregular';
+    src: url('/src/font/neo_sans_std_regular-webfont.woff2') format('woff2'),
+        url('/src/font/neo_sans_std_regular-webfont.woff') format('woff');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* max-width: 100vh; */
-    --font-family: Helvetica, sans-serif;
+}
+
+/* Accessibility Focus */
+*:not(iframe):focus-visible {
+    outline: 3.5px dashed var(--black);
+    outline-offset: 3px;
+}
+
+@supports not selector(:focus-visible) {
+    *:not(iframe):focus {
+        outline: 3px solid var(--second-white);
+        box-shadow: 0 0 0 6px var(--second-black);
+    }
+}
+
+/* --- */
+
+:root {
+    --font-family: 'neo_sans_stdregular', Verdana, sans-serif;
 
     /* Colors */
-    --dark-blue: #1C3380;
+    --dark-blue: #1b3280;
+    --second-blue: #105292;
     --light-blue: #00b8f2;
     --white: #fff;
     --black: #191919;
+    --second-black: #363636;
     --second-white: #ddd;
     --bg-color: #efefef;
     --gray: #d9d9d9;
     --yellow: #ffcc00;
     --purple: #840099;
     --pink: #ff0099;
-    --orange: #f06c00;
+    --orange: #f06c00c9;
     --green: #339933;
-    --light-green: #66cc33;
+    --light-green: #66ec23;
+    --red: #be112e;
 }
 
 html {
@@ -37,13 +65,16 @@ body {
     font-size: 1.6rem;
     font-family: var(--font-family);
     background: var(--bg-color);
-    color: var(--black);
+    color: var(--dark-blue);
     display: flex;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
 }
 
-main {
-    flex-grow: 1;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
