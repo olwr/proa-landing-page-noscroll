@@ -76,6 +76,10 @@
     height: 30px;
 }
 
+.btn__answer:not(:disabled):hover {
+    border-color: var(--yellow);
+}
+
 .btn__answer:disabled {
     color: var(--black);
 }
