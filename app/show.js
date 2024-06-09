@@ -72,7 +72,7 @@ function selectedAnswer(e) {
     } else {
         selectedBtn.classList.add('incorrect');
         feedback.textContent = currentFeedback.feedback;
-        feedback.style.color = 'var(--red)'
+        feedback.style.color = 'var(--warning)'
     }
 
     Array.from(answerButton.children).forEach(button => {

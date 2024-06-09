@@ -2,19 +2,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.7rem;
+    padding: var(--spacing-half-x);
     background-color: var(--second-blue);
     color: var(--white);
-    gap: 1rem;
+    gap: var(--spacing-quarter-3-x);
 }
 
 .header__logo {
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 64px;
+    height: 24px;
 }
 
 .page-title {
-    font-size: 1.2rem;
+    font-size: var(--font-size-xxs);
     font-weight: 500;
 }
 
@@ -27,10 +27,10 @@
 @media screen and (width >= 1024px) {
     .header-container {
         justify-content: center;
-        gap: 7rem;
+        gap: 7.2rem;
     }
 
     .page-title {
-        font-size: 1.3rem;
+        font-size: var(--font-size-xs);
     }
 }

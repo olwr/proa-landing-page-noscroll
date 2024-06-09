@@ -1,11 +1,11 @@
 .footer-container {
     text-align: center;
     background-color: var(--second-blue);
-    padding: 0.5rem;
-    margin-top: 2rem;
+    padding: var(--spacing-half-x);
+    margin-top: var(--spacing-5-quarter-x);
 }
 
 .footer__logo {
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 64px;
+    height: 24px;
 }

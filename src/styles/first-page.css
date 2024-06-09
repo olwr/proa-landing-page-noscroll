@@ -2,28 +2,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    gap: 2rem;
+    padding: var(--spacing-3-half-x);
+    gap: var(--spacing-5-quarter-x);
     text-align: center;
-    margin-top: 2.5rem;
-    line-height: 2.5rem;
+    margin-top: var(--spacing-2-x);
+    line-height: var(--line-height-s);
 }
 
 .page-subtitle {
-    font-size: 1.8rem;
+    font-size: var(--font-size-l);
     font-weight: 600;
 }
 
 .first__desc {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--spacing-5-quarter-x);
 }
 
 .start-btn {
     cursor: pointer;
-    width: 45%;
-    height: 4.5rem;
+    width: 48%;
+    height: var(--spacing-3-x);
     background: transparent url('/src/assets/CTA_COMECAR.png') no-repeat;
     background-position: center;
     background-size: contain;
@@ -37,21 +37,25 @@
 
 @media screen and (width >= 768px) {
     .start-btn {
-        width: 25%;
+        width: 24%;
     }
 }
 
 @media screen and (width >= 1024px) {
+    .first__page {
+        gap: var(--spacing-2-x);
+        margin-top: var(--spacing-3-x);
+    }
+
     .page-subtitle {
-        font-size: 2rem;
+        font-size: var(--font-size-xl);
     }
 
     .first__desc {
-        font-size: 1.7rem;
+        font-size: var(--font-size-m);
     }
 
     .start-btn {
-        width: 15%;
-        height: 5rem;
+        width: 16%;
     }
 }
